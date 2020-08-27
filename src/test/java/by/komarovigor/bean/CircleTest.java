@@ -46,9 +46,17 @@ public class CircleTest {
 
     @Test
     public void testHashCode() {
+        var circle = new Circle();
+        long expected = 31;
+        long actual = circle.hashCode();
+        assertEquals(expected,actual);
     }
 
     @Test
     public void testToString() {
+        var circle = new Circle();
+        String expected = "Circle{Radius=0.0}";
+        String actual = circle.toString();
+        assertEquals(expected, actual);
     }
 }
