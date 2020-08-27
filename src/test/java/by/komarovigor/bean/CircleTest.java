@@ -8,7 +8,7 @@ public class CircleTest {
 
     @Test
     public void getRadius() {
-        var circle = new Circle();
+        var circle = new Circle(0.0);
         circle.setRadius(40.5);
         double expected = 40.5;
         double actual = circle.getRadius();
@@ -55,7 +55,7 @@ public class CircleTest {
     @Test
     public void testToString() {
         var circle = new Circle();
-        String expected = "Circle{Radius=0.0}";
+        String expected = "Circle{radius=0.0}";
         String actual = circle.toString();
         assertEquals(expected, actual);
     }
